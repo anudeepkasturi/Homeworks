@@ -1,0 +1,10 @@
+<h1>All The Cats!</h1>
+
+<ol>
+<% @cats.all do |cat| %>
+    <li>
+      <!-- <%= link_to "#{cat.name}", "/cats/#{cat.id}", method: :get  %> -->
+      <%= cat.name %>
+    </li>
+<% end %>
+</ol>
